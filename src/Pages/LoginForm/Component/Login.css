@@ -1,0 +1,66 @@
+.login {
+	font-size: 20px;
+}
+
+.login h3,
+.login h1,
+.login p {
+	margin-bottom: 1.5em;
+}
+.login h1 {
+	color: #f1f1f1;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	line-height: 0.5em;
+}
+
+.login h3,
+.login p {
+	font-size: 1.1em;
+	color: #bbb;
+}
+.login p {
+	font-family: 'Quicksand', sans-serif;
+}
+.login p span {
+	color: #1d90f5;
+}
+.login p span {
+	cursor: pointer;
+}
+.login h1 span {
+	color: #1d90f5;
+	font-size: 60px;
+}
+.login button {
+	margin-top: 10px;
+	width: 23.75em;
+	text-align: center;
+	font-family: 'Acme', sans-serif;
+	font-size: 1em;
+	border: none;
+	padding: 0.8em 1.6em;
+	color: #f1f1f1;
+	border-radius: 1.875em;
+	cursor: pointer;
+	background-color: #1d90f5;
+}
+.login button:active {
+	transform: translateY(2px);
+}
+
+@media screen and (max-width: 1024px) {
+	.login {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.login {
+		font-size: 12.5px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.login {
+		font-size: 11.5px;
+	}
+}

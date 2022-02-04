@@ -1,0 +1,102 @@
+.card {
+	aspect-ratio: 2/3;
+	width: 100%;
+	transform-style: preserve-3d;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+}
+.card:hover .front {
+	transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover .back {
+	transform: perspective(600px) rotateY(0deg);
+}
+.card .back {
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+	background-color: aqua;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	transition: transform 0.8s linear;
+	height: 100%;
+}
+.card .front {
+	transition: transform 0.8s linear;
+	transform: perspective(600px) rotate(0deg);
+	top: 0;
+	background-color: antiquewhite;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+.card p {
+	z-index: 10;
+}
+
+.card .container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.card .container p {
+	transform: translateZ(100px);
+}
+.card .layer {
+	width: 100%;
+	min-height: 100%;
+	background-color: #373f4b96;
+	backdrop-filter: blur(10px);
+	color: #f1f1f1;
+	padding: 1em;
+}
+.card .back h2 {
+	margin-bottom: 5px;
+	color: #1d90f5;
+	font-family: 'Acme', sans-serif;
+}
+.card .front .bottomSide {
+	background-color: #373f4b;
+	position: absolute;
+	width: 100%;
+	color: #f1f1f1;
+	padding: 0.6em;
+	bottom: 0;
+}
+.card .front h2 {
+	font-family: 'Acme', sans-serif;
+}
+.card .front .rating {
+	width: max-content;
+	padding: 0.3em 5px;
+	height: 100%;
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clear {
+	clear: both;
+}
+.card .topSide {
+	width: max-content;
+	background-color: #373f4b;
+	color: #f1f1f1;
+	font-family: 'Acme', sans-serif;
+	position: absolute;
+	top: 0;
+	padding: 0.5em;
+}
+@media screen and (max-width: 1024px) {
+	.card {
+		font-size: 12.5px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.card {
+		font-size: 11.5px;
+	}
+}

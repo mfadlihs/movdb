@@ -1,0 +1,92 @@
+.content {
+	font-size: 16px;
+	padding: 1em 3.5em 2em;
+	min-height: 100vh;
+	background-color: #242a32;
+}
+.content h1 {
+	color: #f1f1f1;
+	font-size: 2.5em;
+	font-family: 'Acme', sans-serif;
+	margin-bottom: 15px;
+}
+.content h1 span {
+	color: #1d90f5;
+	font-size: 1.5em;
+}
+.cardContainer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2em 1.5em;
+	margin-bottom: 20px;
+}
+.pages-container {
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+.pages-container a {
+	margin-right: 7.5px;
+	font-weight: 700;
+	padding: 15px;
+	background-color: #373f4b;
+	color: #f1f1f1;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.loading-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .changePage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .changePage .container {
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: 10px;
+}
+.changePage .page {
+	background-color: #373f4b;
+	text-decoration: none;
+	padding: 10px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: #f1f1f1;
+}
+@media screen and (max-width: 1300px) {
+	.content {
+		padding: 1em 2em 2em;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.content {
+		font-size: 12.5px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.cardContainer {
+		gap: 1.5em 1.4em;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.content {
+		padding: 0.8em 1.8em 2em;
+	}
+}
+@media screen and (max-width: 425px) {
+	.cardContainer {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.content {
+		padding: 1em 1.5em 2em;
+	}
+}

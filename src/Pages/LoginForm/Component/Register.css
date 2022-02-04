@@ -1,0 +1,92 @@
+.register {
+	font-size: 20px;
+}
+
+.register h3,
+.register h1,
+.register p {
+	margin-bottom: 1.5em;
+}
+.register h1 {
+	color: #f1f1f1;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	line-height: 0.5em;
+}
+
+.register h3,
+.register p {
+	font-size: 1.1em;
+	color: #bbb;
+}
+.register p {
+	font-family: 'Quicksand', sans-serif;
+}
+.register p span {
+	color: #1d90f5;
+}
+.register p span {
+	cursor: pointer;
+}
+.register h1 span {
+	color: #1d90f5;
+	font-size: 60px;
+}
+.register button {
+	margin-top: 10px;
+	width: 11.25em;
+	text-align: center;
+	font-family: 'Acme', sans-serif;
+	font-size: 1em;
+	border: none;
+	padding: 0.8em 1.6em;
+	color: #f1f1f1;
+	border-radius: 1.875em;
+	cursor: pointer;
+}
+.register button:active {
+	transform: translateY(2px);
+}
+
+.method {
+	margin-right: 0.9375em;
+	background-color: #656565;
+}
+.create {
+	background-color: #1d90f5;
+}
+
+.name {
+	display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+	.register {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.register {
+		font-size: 12.5px;
+	}
+	.name {
+		flex-direction: column;
+	}
+	.first,
+	.last {
+		width: 23.75em;
+		margin-right: unset;
+	}
+	.register .submit {
+		display: flex;
+		flex-direction: column;
+	}
+	.register button {
+		width: 23.75em;
+	}
+}
+@media screen and (max-width: 375px) {
+	.register {
+		font-size: 11.5px;
+	}
+}
